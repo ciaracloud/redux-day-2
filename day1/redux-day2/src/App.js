@@ -20,10 +20,9 @@ function App() {
         draggable
         pauseOnHover
       />
-      <h1>Joe's Handy Dandy Tools 🧰</h1>
+      <h1 className="header">Kiwi's Yarn Shop 🐈‍⬛ 🧶</h1>
       <div className="LayoutContainer">
         <ProductContainer />
-        <Cart />
       </div>
     </div>
   );

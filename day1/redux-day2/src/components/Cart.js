@@ -4,10 +4,10 @@ import CartItem from "./CartItem";
 
 export default function Cart() {
   const cart = useSelector((state) => state.cart);
-  console.log(cart);
+  console.log("this is the cart", cart);
   return (
     <div className="cart">
-      <h1>Cart</h1>
+      <h1 className="header">Cart</h1>
       {cart?.map((item) => (
         <CartItem product={item} />
       ))}

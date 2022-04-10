@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  border: 3px solid black;
   height: auto;
 }
 .LayoutContainer {
@@ -14,16 +13,56 @@
   height: auto;
   width: 100%;
   min-height: 29rem;
-  border: 3px solid black;
-}
-.cartProduct {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
 }
+
 .productImage {
-  height: 5rem;
+  width: 60%;
+  height: 50%;
+  border-radius: 12px;
+  object-fit: cover;
 }
-.singleProduct {
+
+.singleProduct,
+.cartProduct {
+  width: 40%;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
+  background-color: mediumorchid;
+  padding: 9px;
+}
+
+.links {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  color: mediumorchid;
+}
+
+.button {
+  border: none;
+  background-color: mediumorchid;
+  color: white;
+  padding: 7px;
+  margin: 0px;
+  border-radius: 6px;
+  cursor: pointer;
 }
